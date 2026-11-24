@@ -4,14 +4,15 @@
 -------------------------------- */
 
 :root {
-  --cream: #fff8ed;
-  --ink: #29252b;
-  --coral: #f47765;
-  --orange: #ffad65;
-  --lavender: #c8b8f0;
-  --blue: #a9d9ed;
-  --green: #c8d9a9;
+  --cream: #F3EDE2;
+  --ink: #302D28;
+  --coral: #B76E4C;
+  --orange: #D5A477;
+  --lavender: #B5A58B;
+  --blue: #A8AAA0;
+  --green: #747C60;
 }
+
 
 * {
   margin: 0;
