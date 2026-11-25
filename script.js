@@ -1,8 +1,23 @@
+// Footer year and accessible image lightbox
+const year = document.getElementById("year");
+if (year) year.textContent = new Date().getFullYear();
 
-// Automatically updates the copyright year
+const lightbox = document.getElementById("lightbox");
+const lightboxImage = document.getElementById("lightbox-image");
+const lightboxCaption = document.getElementById("lightbox-caption");
 
-const yearElement = document.getElementById("year");
+document.querySelectorAll(".lightbox-trigger").forEach((button) => {
+  button.addEventListener("click", () => {
+    lightboxImage.src = button.dataset.full;
+    lightboxImage.alt = button.querySelector("img").alt;
+    lightboxCaption.textContent = button.dataset.caption || "";
+    lightbox.showModal();
+  });
+});
 
-if (yearElement) {
-  yearElement.textContent = new Date().getFullYear();
+if (lightbox) {
+  lightbox.querySelector(".lightbox-close").addEventListener("click", () => lightbox.close());
+  lightbox.addEventListener("click", (event) => {
+    if (event.target === lightbox) lightbox.close();
+  });
 }
