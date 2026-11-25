@@ -530,3 +530,96 @@ footer { display:flex; justify-content:space-between; gap:20px; padding:25px 7vw
     columns: 1;
   }
 }
+/* ===== FULL NATURE GALLERY PAGE ===== */
+
+.nature-page-intro {
+  padding: 85px 10vw 45px;
+}
+
+.nature-page-intro h1 {
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  margin: 18px 0;
+}
+
+.nature-page-intro p {
+  max-width: 450px;
+  color: var(--muted);
+  line-height: 1.8;
+  font-size: .9rem;
+}
+
+.gallery-back-link {
+  display: inline-block;
+  margin-top: 25px;
+  font-size: .8rem;
+  color: var(--terracotta);
+  text-decoration: none;
+}
+
+.gallery-back-link:hover {
+  opacity: .7;
+}
+
+/* Masonry-style photo layout */
+
+.nature-full-gallery {
+  padding: 20px 10vw 100px;
+}
+
+.nature-full-grid {
+  columns: 3;
+  column-gap: 22px;
+}
+
+.nature-full-item {
+  break-inside: avoid;
+  margin-bottom: 28px;
+}
+
+.nature-full-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.photo-location {
+  font-size: .72rem;
+  color: var(--muted);
+  margin-top: 10px;
+  letter-spacing: .03em;
+}
+
+/* Tablet layout */
+
+@media (max-width: 900px) {
+  .nature-full-grid {
+    columns: 2;
+  }
+}
+
+/* Mobile layout */
+
+@media (max-width: 700px) {
+  .nature-page-intro {
+    padding: 65px 7vw 35px;
+  }
+
+  .nature-full-gallery {
+    padding: 20px 7vw 75px;
+  }
+
+  .nature-full-grid {
+    columns: 2;
+    column-gap: 14px;
+  }
+
+  .nature-full-item {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .nature-full-grid {
+    columns: 1;
+  }
+}
