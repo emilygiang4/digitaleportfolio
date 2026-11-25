@@ -311,3 +311,23 @@ footer { display:flex; justify-content:space-between; gap:20px; padding:25px 7vw
   width: 100%;
   height: 100%;
 }
+
+/* INTI COFFEE VERTICAL VIDEO SIZE */
+.project-five .video-container {
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.project-five .video-container > div {
+  padding: 0 !important;
+  aspect-ratio: 9 / 16;
+  position: relative;
+}
+
+.project-five .video-container iframe {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
