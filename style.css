@@ -563,12 +563,14 @@ footer { display:flex; justify-content:space-between; gap:20px; padding:25px 7vw
 /* Masonry-style photo layout */
 
 .nature-full-gallery {
-  padding: 20px 10vw 100px;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 20px 40px 100px;
 }
 
 .nature-full-grid {
   columns: 3;
-  column-gap: 22px;
+  column-gap: 20px;
 }
 
 .nature-full-item {
