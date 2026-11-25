@@ -451,3 +451,82 @@ footer { display:flex; justify-content:space-between; gap:20px; padding:25px 7vw
     columns: 1;
   }
 }
+/* ===== COMPACT NATURE PREVIEW ===== */
+
+.nature-gallery {
+  padding: 65px 8vw 75px;
+}
+
+.nature-heading {
+  margin-bottom: 28px;
+}
+
+.nature-heading h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin: 12px 0;
+}
+
+.nature-heading p {
+  font-size: .82rem;
+  line-height: 1.7;
+}
+
+.nature-preview-grid {
+  columns: 3;
+  column-gap: 16px;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.nature-preview-item {
+  break-inside: avoid;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+.nature-preview-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.nature-gallery-link {
+  margin-top: 30px;
+}
+
+.gallery-button {
+  padding: 12px 20px;
+  font-size: .75rem;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  .nature-preview-grid {
+    columns: 2;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+  .nature-gallery {
+    padding: 55px 7vw 65px;
+  }
+
+  .nature-preview-grid {
+    columns: 2;
+    column-gap: 12px;
+  }
+
+  .nature-preview-item {
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 450px) {
+  .nature-preview-grid {
+    columns: 1;
+  }
+}
