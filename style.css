@@ -331,3 +331,95 @@ footer { display:flex; justify-content:space-between; gap:20px; padding:25px 7vw
   width: 100%;
   height: 100%;
 }
+
+/* ===== NATURE PHOTOGRAPHY GALLERY ===== */
+
+.nature-gallery {
+  padding: 110px 10vw 130px;
+  background: #DED8CB;
+}
+
+.nature-heading {
+  max-width: 600px;
+  margin-bottom: 65px;
+}
+
+.nature-heading .eyebrow {
+  font-size: .72rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.nature-heading h2 {
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  margin: 22px 0;
+}
+
+.nature-heading p {
+  max-width: 440px;
+  color: var(--muted);
+  line-height: 1.85;
+  font-size: .95rem;
+}
+
+.nature-grid {
+  display: grid;
+  grid-template-columns: 1.15fr .85fr;
+  gap: 50px;
+  align-items: start;
+}
+
+.nature-item {
+  position: relative;
+  min-width: 0;
+}
+
+.nature-item img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.nature-wide img {
+  aspect-ratio: 4 / 5;
+}
+
+.nature-tall {
+  margin-top: 110px;
+}
+
+.nature-tall img {
+  aspect-ratio: 3 / 4;
+}
+
+.nature-caption {
+  display: block;
+  padding-top: 14px;
+  font-size: .72rem;
+  color: var(--muted);
+  letter-spacing: .04em;
+}
+
+/* Nature gallery responsive layout */
+
+@media (max-width: 700px) {
+
+  .nature-gallery {
+    padding: 80px 7vw;
+  }
+
+  .nature-heading {
+    margin-bottom: 40px;
+  }
+
+  .nature-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .nature-tall {
+    margin-top: 0;
+  }
+
+}
