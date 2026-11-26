@@ -625,3 +625,8 @@ footer { display:flex; justify-content:space-between; gap:20px; padding:25px 7vw
     columns: 1;
   }
 }
+/* Smaller hero introduction */
+
+.hero-intro {
+  font-size: 0.55em;
+}
