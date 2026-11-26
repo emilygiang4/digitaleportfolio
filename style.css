@@ -630,3 +630,9 @@ footer { display:flex; justify-content:space-between; gap:20px; padding:25px 7vw
 .hero-intro {
   font-size: 0.55em;
 }
+.nature-preview-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
